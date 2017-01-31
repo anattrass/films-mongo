@@ -49,7 +49,7 @@ UI.prototype = {
     form.appendChild(genre);
     form.appendChild(submit);
     form.onsubmit = function(event){
-      event.preventDefault();
+      // event.preventDefault();
       var data = {
         title: title.value,
         genre: genre.value,
@@ -71,6 +71,7 @@ UI.prototype = {
       var li = document.createElement('li');
       this.appendText(li, film.title, 'Film: ');
       this.appendText(li, film.genre, 'Genre: ');
+      this.appendText(li, film.actors, 'Actors: ');
       
       for (var review of film.reviews){
         this.createReview(li, review);
