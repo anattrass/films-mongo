@@ -90,12 +90,15 @@
 	
 	    var title = document.createElement('input');
 	    title.setAttribute("type", "text");
+	    title.setAttribute("placeholder", "Title...")
 	
 	    var genre = document.createElement('input');
 	    genre.setAttribute("type", "text");
+	    genre.setAttribute("placeholder", "Genre...")
 	
 	    var actors = document.createElement('input');
 	    actors.setAttribute("type", "text");
+	    actors.setAttribute("placeholder", "Actors...")
 	
 	    var submit = document.createElement('input');
 	    submit.setAttribute("type", "submit");
